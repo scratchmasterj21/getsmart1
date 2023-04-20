@@ -47,3 +47,25 @@ audio {
   margin: 10px auto;
   width: 80%;
 }
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #3e8e41;
+}
+.header {
+  text-align: center;
+}
+.left {
+  float: left;
+}
