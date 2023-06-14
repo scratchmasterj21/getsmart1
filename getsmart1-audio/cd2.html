@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Get Smart 1 Cd 2</title>
+    <link rel="stylesheet" href="kid-friendly.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.audio-title-m1').click(function() {
+          $(this).siblings('.audio-player-m1').slideToggle();
+        });
+        $('.audio-title-m2').click(function() {
+          $(this).siblings('.audio-player-m2').slideToggle();
+        });
+        $('.audio-title-m3').click(function() {
+          $(this).siblings('.audio-player-m3').slideToggle();
+        });
+        $('.audio-title-m4').click(function() {
+          $(this).siblings('.audio-player-m4').slideToggle();
+        });
+
+        $('.audio-main-title-m1').click(function() {
+          $(this).siblings('.audio-list-m1').slideToggle();
+        });
+        $('.audio-main-title-m2').click(function() {
+          $(this).siblings('.audio-list-m2').slideToggle();
+        });
+        $('.audio-main-title-m3').click(function() {
+          $(this).siblings('.audio-list-m3').slideToggle();
+        });
+        $('.audio-main-title-m4').click(function() {
+          $(this).siblings('.audio-list-m4').slideToggle();
+        });
+      });
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+    <button onclick="goBack()">Go Back</button>
+    <h1>Get Smart 1 Class CD 2</h1>
+    <h2 class="audio-main-title-m1">Module 5</h2>
+    <ul class="audio-list-m1" style="display: none;">
+   
+    <script>
+    const m1tracks = 
+    [
+     "Titles",
+     "M5 Sing a Song Vocabulary",
+     "M5 Sing a Song Act.1",
+     "M5 Sing a Song Look!",
+     "M5 Sing a Song Act.2",
+     "M5 Smart Kids Vocabulary",
+     "M5 Smart Kids Act.1",
+     "M5 Smart Kids Look!",
+     "M5 Smart Kids Act.3",
+     "M5 Smart Kids Act.4",
+     "M5 Smart Kids WB / Act.2",
+     "M5 Once Upon a Time Vocabulary",
+     "M5 Once Upon a Time Act.1",
+     "M5 Once Upon a Time Look!",
+     "M5 Once Upon a Time Act.3",
+     "M5 Once Upon a Time Act.4",
+     "M5 Let's Play Look!",
+     "M5 Let's Play Act.1",
+     "M5 Let's Play WB / Act.1",
+     "M5 Project WB / Act.1",
+     "M5 Story Time Act.1",
+     "M5 Story Time WB / Act.1",
+     "M5 Review Act.2"
+     ];
+
+    let m1htmlContent = "";
+    
+    for (let i = 1; i <= 23; i++) {
+      const m1trackIndex = (i - 1) % m1tracks.length;
+      const m1trackTitle = m1tracks[m1trackIndex];
+      
+      m1htmlContent += `
+          <li>
+            <center>
+              <h2 class="audio-title-m1">Track ${i}: ${m1trackTitle}</h2>
+              <div class="audio-player-m1" style="display: none;">
+                <audio controls loading="lazy" preload="none">
+                  <source src="audio/cd2/${
+                    i <= 9 ? i.toString().padStart(2, "0") : i
+                  } Track ${i}.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </center>
+          </li>
+        `;
+      }
+      
+      document.querySelector(".audio-list-m1").innerHTML = m1htmlContent;
+  </script>
+
+  </ul>
+   <h2 class="audio-main-title-m2">Module 6</h2>
+    <ul class="audio-list-m2" style="display: none;">
+   
+    <script>
+    const m2tracks = 
+    [
+     "M6 Sing a Song Vocabulary",
+     "M6 Sing a Song Act.1",
+     "M6 Sing a Song Look!",
+     "M6 Sing a Song Act.2",
+     "M6 Smart Kids Vocabulary",
+     "M6 Smart Kids Act.1",
+     "M6 Smart Kids Look!",
+     "M6 Smart Kids Act.3",
+     "M6 Smart Kids Act.4",
+     "M6 Once Upon a Time Vocabulary",
+     "M6 Once Upon a Time Act.1",
+     "M6 Once Upon a Time Look!",
+     "M6 Once Upon a Time Act.3",
+     "M6 Once Upon a Time Act.4",
+     "M6 Once Upon a Time WB / Act.1",
+     "M6 Let's Play Look!",
+     "M6 Let's Play Act.1",
+     "M6 Project WB / Act.1",
+     "M6 Story Time Act.1",
+     "M6 Story Time WB / Act.1",
+     "M6 Review Act.2"
+     ];
+    
+    let m2htmlContent = "";
+
+    let count = 1;
+
+    for (let i = 24; i <= 44; i++) {
+      
+      const m2trackIndex = (count - 1) % m2tracks.length;
+      const m2trackTitle = m2tracks[m2trackIndex];
+      
+      m2htmlContent += `
+          <li>
+            <center>
+              <h2 class="audio-title-m2">Track ${i}: ${m2trackTitle}</h2>
+              <div class="audio-player-m2" style="display: none;">
+                <audio controls loading="lazy" preload="none">
+                  <source src="audio/cd2/${
+                    i <= 9 ? i.toString().padStart(2, "0") : i
+                  } Track ${i}.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </center>
+          </li>
+        `;
+            count++;
+
+      }
+      
+      document.querySelector(".audio-list-m2").innerHTML = m2htmlContent;
+  </script>
+
+    </ul>
+ 
+    <h2 class="audio-main-title-m3">Module 7</h2>
+    <ul class="audio-list-m3" style="display: none;">
+   
+    <script>
+    const m3tracks = 
+    [
+     "M7 Sing a Song Vocabulary",
+     "M7 Sing a Song Act.1",
+     "M7 Sing a Song Look!",
+     "M7 Sing a Song WB / Act.3",
+     "M7 Smart Kids Vocabulary",
+     "M7 Smart Kids Act.1",
+     "M7 Smart Kids Look!",
+     "M7 Smart Kids Act.3",
+     "M7 Smart Kids Act.4",
+     "M7 Once Upon a Time Vocabulary",
+     "M7 Once Upon a Time Act.1",
+     "M7 Once Upon a Time Look!",
+     "M7 Once Upon a Time Act.3",
+     "M7 Once Upon a Time Act.4",
+     "M7 Let's Play Look!",
+     "M7 Let's Play Act.1",
+     "M7 Let's Play WB / Act.2",
+     "M7 Project WB / Act.1",
+     "M7 Story Time Act.1",
+     "M7 Review Act.2"
+     ];
+    let m3htmlContent = "";
+
+    let count2 = 1;
+
+    for (let i = 45; i <= 64; i++) {
+      
+      const m3trackIndex = (count2 - 1) % m3tracks.length;
+      const m3trackTitle = m3tracks[m3trackIndex];
+      
+      m3htmlContent += `
+          <li>
+            <center>
+              <h2 class="audio-title-m3">Track ${i}: ${m3trackTitle}</h2>
+              <div class="audio-player-m3" style="display: none;">
+                <audio controls loading="lazy" preload="none">
+                  <source src="audio/cd2/${
+                    i <= 9 ? i.toString().padStart(2, "0") : i
+                  } Track ${i}.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </center>
+          </li>
+        `;
+            count2++;
+      }
+      
+      document.querySelector(".audio-list-m3").innerHTML = m3htmlContent;
+  </script>
+
+    </ul>
+
+    <h2 class="audio-main-title-m4">Module 8</h2>
+    <ul class="audio-list-m4" style="display: none;">
+   
+    <script>
+    const m4tracks = 
+    [
+     "M8 Sing a Song Vocabulary",
+     "M8 Sing a Song Act.1",
+     "M8 Sing a Song Look!",
+     "M8 Sing a Song Act.2",
+     "M8 Smart Kids Vocabulary",
+     "M8 Smart Kids Act.1",
+     "M8 Smart Kids Look!",
+     "M8 Smart Kids Act.3",
+     "M8 Smart Kids Act.4",
+     "M8 Our World Vocabulary",
+     "M8 Our World Act.1",
+     "M8 Our World Look!",
+     "M8 Our World Act.3",
+     "M8 Our World Act.4",
+     "M8 Let's Play Look!",
+     "M8 Let's Play Act.1",
+     "M8 Let's Play WB / Act.1",
+     "M8 Story Time Act.1",
+     "M8 Review Act.2"
+     ];
+    let m4htmlContent = "";
+
+    let count3 = 1;
+
+    for (let i = 65; i <= 83; i++) {
+      
+      const m4trackIndex = (count3 - 1) % m4tracks.length;
+      const m4trackTitle = m4tracks[m4trackIndex];
+      
+      m4htmlContent += `
+          <li>
+            <center>
+              <h2 class="audio-title-m4">Track ${i}: ${m4trackTitle}</h2>
+              <div class="audio-player-m4" style="display: none;">
+                <audio controls loading="lazy" preload="none">
+                  <source src="audio/cd2/${
+                    i <= 9 ? i.toString().padStart(2, "0") : i
+                  } Track ${i}.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </center>
+          </li>
+        `;
+            count3++;
+      }
+      
+      document.querySelector(".audio-list-m4").innerHTML = m4htmlContent;
+  </script>
+
+    </ul>
+ 
+  </center>
+  </body>
+</html>
